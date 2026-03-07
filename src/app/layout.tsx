@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { BackToTop } from "@/components/back-to-top";
 import { siteContent } from "@/data/site-content";
 import "./globals.css";
 
@@ -48,6 +49,7 @@ export default function RootLayout({
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <BackToTop />
         <SpeedInsights />
       </body>
     </html>
