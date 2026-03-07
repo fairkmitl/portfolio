@@ -23,8 +23,8 @@ export function Hero() {
   const { personal } = siteContent;
 
   return (
-    <section className="flex min-h-[100dvh] items-center">
-      <div className="mx-auto max-w-4xl px-6 py-32 md:px-8">
+    <section className="flex items-center pt-28 pb-16 md:pt-36 md:pb-20">
+      <div className="mx-auto max-w-4xl px-6 md:px-8">
         <div className="flex flex-col-reverse items-center gap-12 md:flex-row md:items-start md:gap-16">
           <div className="flex-1">
             <p className="text-sm font-medium tracking-widest text-emerald-600 uppercase">
