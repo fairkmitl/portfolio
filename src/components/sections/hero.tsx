@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteContent } from "@/data/site-content";
 
 function DownloadIcon() {
@@ -24,54 +25,69 @@ export function Hero() {
   return (
     <section className="flex min-h-[100dvh] items-center">
       <div className="mx-auto max-w-4xl px-6 py-32 md:px-8">
-        <div className="max-w-2xl">
-          <p className="text-sm font-medium tracking-widest text-emerald-600 uppercase">
-            {personal.location}
-          </p>
+        <div className="flex flex-col-reverse items-center gap-12 md:flex-row md:items-start md:gap-16">
+          <div className="flex-1">
+            <p className="text-sm font-medium tracking-widest text-emerald-600 uppercase">
+              {personal.location}
+            </p>
 
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-            {personal.name}
-          </h1>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              {personal.name}
+            </h1>
 
-          <p className="mt-3 text-lg font-medium text-gray-500 md:text-xl">
-            {personal.title}
-          </p>
+            <p className="mt-3 text-lg font-medium text-gray-500 md:text-xl">
+              {personal.title}
+            </p>
 
-          <p className="mt-6 max-w-lg text-base leading-relaxed text-gray-500">
-            {siteContent.about.summary.split(".").slice(0, 2).join(".") + "."}
-          </p>
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-gray-500">
+              {siteContent.about.summary.split(".").slice(0, 2).join(".") + "."}
+            </p>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            <a
-              href="#experience"
-              className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-emerald-700"
-            >
-              View Experience
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
-            >
-              Contact Me
-            </a>
-            <a
-              href="/documents/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
-            >
-              Resume
-              <DownloadIcon />
-            </a>
-            <a
-              href="/documents/cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
-            >
-              CV
-              <DownloadIcon />
-            </a>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <a
+                href="#experience"
+                className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-emerald-700"
+              >
+                View Experience
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+              >
+                Contact Me
+              </a>
+              <a
+                href="/documents/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+              >
+                Resume
+                <DownloadIcon />
+              </a>
+              <a
+                href="/documents/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+              >
+                CV
+                <DownloadIcon />
+              </a>
+            </div>
+          </div>
+
+          <div className="shrink-0">
+            <div className="relative h-48 w-48 overflow-hidden rounded-full ring-2 ring-emerald-100 ring-offset-4 md:h-56 md:w-56">
+              <Image
+                src="/images/profile.jpg"
+                alt={personal.name}
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 192px, 224px"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
