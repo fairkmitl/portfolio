@@ -31,7 +31,7 @@ export function Navigation() {
           className="text-sm font-semibold tracking-tight text-gray-900"
         >
           {siteContent.personal.name.split(" ")[0]}
-          <span className="text-gray-400">.</span>
+          <span className="text-emerald-500">.</span>
         </a>
 
         {/* Desktop */}
@@ -40,7 +40,7 @@ export function Navigation() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="text-sm text-gray-500 transition-colors hover:text-gray-900"
+                className="text-sm text-gray-500 transition-colors hover:text-emerald-600"
               >
                 {item.label}
               </a>
@@ -80,7 +80,7 @@ export function Navigation() {
                 <a
                   href={item.href}
                   onClick={handleNavClick}
-                  className="block py-2 text-sm text-gray-600 transition-colors hover:text-gray-900"
+                  className="block py-2 text-sm text-gray-600 transition-colors hover:text-emerald-600"
                 >
                   {item.label}
                 </a>

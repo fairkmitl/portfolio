@@ -27,7 +27,7 @@ export function Education() {
               <ul className="mt-3 space-y-1.5">
                 {edu.details.map((detail, j) => (
                   <li key={j} className="flex gap-3 text-sm text-gray-600">
-                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-gray-300" />
+                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-emerald-300" />
                     <span className="leading-relaxed">{detail}</span>
                   </li>
                 ))}

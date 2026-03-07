@@ -26,7 +26,7 @@ export function About() {
           <ul className="space-y-3">
             {about.philosophy.map((item, i) => (
               <li key={i} className="flex gap-3 text-base text-gray-600">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-300" />
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
                 <span className="leading-relaxed">{item}</span>
               </li>
             ))}

@@ -7,7 +7,7 @@ export function Hero() {
     <section className="flex min-h-[100dvh] items-center">
       <div className="mx-auto max-w-4xl px-6 py-32 md:px-8">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium tracking-widest text-gray-400 uppercase">
+          <p className="text-sm font-medium tracking-widest text-emerald-600 uppercase">
             {personal.location}
           </p>
 
@@ -26,13 +26,13 @@ export function Hero() {
           <div className="mt-10 flex flex-wrap gap-3">
             <a
               href="#experience"
-              className="inline-flex items-center rounded-full bg-gray-900 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-gray-800"
+              className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-emerald-700"
             >
               View Experience
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
             >
               Contact Me
             </a>
@@ -40,7 +40,7 @@ export function Hero() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
+              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
             >
               Download Resume
               <svg

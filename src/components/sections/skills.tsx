@@ -7,7 +7,7 @@ import type { SkillCategory } from "@/data/types";
 function SkillGroup({ group }: { group: SkillCategory }) {
   return (
     <div>
-      <h3 className="mb-3 text-sm font-semibold text-gray-900">
+      <h3 className="mb-3 text-sm font-semibold text-emerald-700">
         {group.category}
       </h3>
       <div className="flex flex-wrap gap-2">
