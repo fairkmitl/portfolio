@@ -1,5 +1,23 @@
 import { siteContent } from "@/data/site-content";
 
+function DownloadIcon() {
+  return (
+    <svg
+      className="ml-2 h-3.5 w-3.5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+      />
+    </svg>
+  );
+}
+
 export function Hero() {
   const { personal } = siteContent;
 
@@ -37,25 +55,22 @@ export function Hero() {
               Contact Me
             </a>
             <a
-              href="/resume.pdf"
+              href="/documents/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
             >
-              Download Resume
-              <svg
-                className="ml-2 h-3.5 w-3.5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
-                />
-              </svg>
+              Resume
+              <DownloadIcon />
+            </a>
+            <a
+              href="/documents/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full border border-gray-200 px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+            >
+              CV
+              <DownloadIcon />
             </a>
           </div>
         </div>
