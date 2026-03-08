@@ -13,6 +13,7 @@ export const siteContent: SiteContent = {
     title: "Senior Software Engineer",
     location: "Bangkok, Thailand",
     email: "weerapat.buachuen@gmail.com",
+    phone: "+66945218645",
     linkedIn: "linkedin.com/in/weerapat-buachuen-63458a1ab",
     linkedInUrl: "https://linkedin.com/in/weerapat-buachuen-63458a1ab",
   },

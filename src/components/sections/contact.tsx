@@ -12,7 +12,7 @@ export function Contact() {
         subtitle="Let's connect"
       />
 
-      <div className="grid gap-6 sm:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <a
           href={`mailto:${personal.email}`}
           className="group rounded-lg border border-gray-100 bg-white p-6 transition-all hover:border-emerald-200 hover:shadow-sm"
@@ -24,6 +24,19 @@ export function Contact() {
           </div>
           <p className="text-xs font-medium tracking-widest text-gray-400 uppercase">Email</p>
           <p className="mt-1 text-sm text-gray-700">{personal.email}</p>
+        </a>
+
+        <a
+          href={`tel:${personal.phone}`}
+          className="group rounded-lg border border-gray-100 bg-white p-6 transition-all hover:border-emerald-200 hover:shadow-sm"
+        >
+          <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-500 transition-colors group-hover:bg-emerald-100 group-hover:text-emerald-600">
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <p className="text-xs font-medium tracking-widest text-gray-400 uppercase">Phone</p>
+          <p className="mt-1 text-sm text-gray-700">{personal.phone}</p>
         </a>
 
         <a

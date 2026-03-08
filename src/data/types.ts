@@ -3,6 +3,7 @@ export interface PersonalInfo {
   title: string;
   location: string;
   email: string;
+  phone: string;
   linkedIn: string;
   linkedInUrl: string;
 }
