@@ -16,6 +16,8 @@ export const siteContent: SiteContent = {
     phone: "+66945218645",
     linkedIn: "linkedin.com/in/weerapat-buachuen-63458a1ab",
     linkedInUrl: "https://linkedin.com/in/weerapat-buachuen-63458a1ab",
+    github: "fairkmitl",
+    githubUrl: "https://github.com/fairkmitl",
   },
 
   nav: [

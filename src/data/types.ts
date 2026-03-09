@@ -6,6 +6,8 @@ export interface PersonalInfo {
   phone: string;
   linkedIn: string;
   linkedInUrl: string;
+  github: string;
+  githubUrl: string;
 }
 
 export interface SiteMetadata {
