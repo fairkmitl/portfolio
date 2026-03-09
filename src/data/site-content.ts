@@ -40,7 +40,7 @@ export const siteContent: SiteContent = {
     {
       company: "GoUpscale Technology",
       role: "Senior Software Engineer",
-      period: "Sep 2023 – Present",
+      period: "Sep 2023 – Feb 2026",
       highlights: [
         "Contributed to architectural design and technical decision-making within owned backend product features.",
         "Designed scalable data models and optimized database structures to support growing system complexity.",
