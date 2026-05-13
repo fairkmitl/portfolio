@@ -4,14 +4,6 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Badge } from "@/components/ui/badge";
 import type { Project } from "@/data/types";
 
-function ExternalLinkIcon() {
-  return (
-    <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-    </svg>
-  );
-}
-
 function GitHubIcon() {
   return (
     <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
@@ -38,30 +30,17 @@ function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
 
-      {(project.liveUrl || project.githubUrl) && (
+      {project.githubUrl && (
         <div className="mt-5 flex flex-wrap gap-3">
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 px-4 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
-            >
-              Live site
-              <ExternalLinkIcon />
-            </a>
-          )}
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 px-4 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
-            >
-              <GitHubIcon />
-              GitHub
-            </a>
-          )}
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 px-4 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+          >
+            <GitHubIcon />
+            GitHub
+          </a>
         </div>
       )}
     </div>

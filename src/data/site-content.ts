@@ -92,9 +92,44 @@ export const siteContent: SiteContent = {
       name: "Personal Portfolio",
       description:
         "A minimal, modern personal portfolio to publish my CV, resume, and professional contacts. Built with server components by default — no unnecessary client-side JavaScript.",
-      tech: ["Next.js 16", "TypeScript", "Tailwind CSS 4", "Vercel"],
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
       liveUrl: "https://weerapat.dev",
       period: "Mar 2026",
+    },
+    {
+      name: "AI-Powered Product Features",
+      description:
+        "Backend engineer building intelligent product features for a production SaaS platform. Designed backend services, data flows, and supporting infrastructure integrated with the OpenAI API, with all services deployed and managed on AWS.",
+      tech: ["Python", "Flask", "OpenAI API", "AWS", "DynamoDB", "REST APIs", "GraphQL"],
+      period: "Sep 2023 – Feb 2026",
+    },
+    {
+      name: "Enterprise ERP System",
+      description:
+        "Led end-to-end development of a company-wide ERP system covering multiple departments. Operated in a hybrid Project Manager / Engineer role — coordinated stakeholders, timelines, and technical execution while contributing to the full-stack implementation.",
+      tech: ["Python", "Django", "PostgreSQL", "Digital Ocean"],
+      period: "Apr 2021 – Jul 2023",
+    },
+    {
+      name: "Time Attendance PWA & Data Visualization",
+      description:
+        "Built internal platforms for the organization, including a Progressive Web App for time attendance tracking and a business data visualization system that consolidated operational metrics for decision-makers.",
+      tech: ["Nuxt.js", "Vue.js", "Laravel", "MySQL", "VPS"],
+      period: "2021 – 2023",
+    },
+    {
+      name: "E-Commerce & CRM/CMS Platform",
+      description:
+        "Designed and developed online ordering and CRM/CMS platforms serving both administrators and end customers. Integrated payment gateways, SMS providers, shipping APIs, and social platforms, with database schemas and AWS-based cloud deployment.",
+      tech: ["Nuxt.js", "Vue.js", "Laravel", "MySQL", "AWS"],
+      period: "Jul 2019 – Mar 2021",
+    },
+    {
+      name: "Automated Stock Trading System",
+      description:
+        "Master's thesis — a machine learning project for stock price forecasting and automated trade execution. Tested and demo-run against the Thai stock market (SET) via brokerage API integration. Recognized with the SET Research Scholarship.",
+      tech: ["Python", "Machine Learning", "Google Colab"],
+      period: "2021 – 2023",
     },
   ],
 
