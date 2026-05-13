@@ -23,6 +23,7 @@ export const siteContent: SiteContent = {
   nav: [
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
+    { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
     { label: "Education", href: "#education" },
     { label: "Contact", href: "#contact" },
@@ -83,6 +84,17 @@ export const siteContent: SiteContent = {
         "Developed internal business applications to support organizational workflows.",
         "Translated user requirements into scalable web-based solutions.",
       ],
+    },
+  ],
+
+  projects: [
+    {
+      name: "Personal Portfolio",
+      description:
+        "A minimal, modern personal portfolio to publish my CV, resume, and professional contacts. Built with server components by default — no unnecessary client-side JavaScript.",
+      tech: ["Next.js 16", "TypeScript", "Tailwind CSS 4", "Vercel"],
+      liveUrl: "https://weerapat.dev",
+      period: "Mar 2026",
     },
   ],
 

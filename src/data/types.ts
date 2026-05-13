@@ -48,6 +48,15 @@ export interface Award {
   description: string;
 }
 
+export interface Project {
+  name: string;
+  description: string;
+  tech: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  period?: string;
+}
+
 export interface NavItem {
   label: string;
   href: string;
@@ -59,6 +68,7 @@ export interface SiteContent {
   nav: NavItem[];
   about: AboutContent;
   experience: WorkExperience[];
+  projects: Project[];
   skills: SkillCategory[];
   education: Education[];
   awards: Award[];
