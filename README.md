@@ -2,6 +2,17 @@
 
 A modern, minimal personal portfolio website built with **Next.js 16** (App Router), **TypeScript**, and **Tailwind CSS 4**.
 
+## Sections
+
+- **Hero** — Name, title, profile photo, and primary CTAs
+- **About** — Professional summary and engineering philosophy
+- **Experience** — Work history timeline
+- **Projects** — Selected projects with tech stacks and optional links
+- **Skills** — Technical competencies grouped by category
+- **Education** — Degrees and academic background
+- **Awards** — Honors and recognitions
+- **Contact** — Email, LinkedIn, and location
+
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router, Server Components)
@@ -56,6 +67,7 @@ src/
 │   │   ├── hero.tsx         # Hero with profile photo & CTA buttons
 │   │   ├── about.tsx        # Summary & engineering philosophy
 │   │   ├── experience.tsx   # Work experience timeline
+│   │   ├── projects.tsx     # Selected projects with tech stacks
 │   │   ├── skills.tsx       # Technical competencies grid
 │   │   ├── education.tsx    # Education history
 │   │   ├── awards.tsx       # Honors & awards
@@ -78,6 +90,7 @@ All portfolio content is centralized in **`src/data/site-content.ts`**. Update t
 - Personal info (name, title, location, email, LinkedIn)
 - Professional summary & philosophy
 - Work experience entries
+- Projects (name, description, tech stack, optional live/GitHub links)
 - Technical skills by category
 - Education records
 - Honors & awards
